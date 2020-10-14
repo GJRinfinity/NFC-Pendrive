@@ -136,7 +136,7 @@ def lcd_byte(bits, mode):
   #        False for command
 
   GPIO.output(LCD_RS, mode) # RS
-
+  #sample comment 1
   # High bits
   GPIO.output(LCD_D4, False)
   GPIO.output(LCD_D5, False)
@@ -150,7 +150,7 @@ def lcd_byte(bits, mode):
     GPIO.output(LCD_D6, True)
   if bits&0x80==0x80:
     GPIO.output(LCD_D7, True)
-
+  # Sample comment2
   # Toggle 'Enable' pin
   time.sleep(E_DELAY)    
   GPIO.output(LCD_E, True)  
